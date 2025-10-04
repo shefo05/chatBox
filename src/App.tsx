@@ -92,13 +92,13 @@ function App() {
   return (
     <div className="flex flex-col h-screen bg-gray-50 dark:bg-gray-900">
       <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
-        <h1 className="text-xl font-semibold text-gray-900 dark:text-white">Chat Assistant</h1>
+        <h1 className="text-xl font-semibold text-gray-900 dark:text-white">NOOR</h1>
       </div>
 
       <div className="flex-1 overflow-y-auto px-4 py-6 space-y-4">
         {messages.length === 0 ? (
           <div className="text-center text-gray-500 dark:text-gray-400 mt-20">
-            <h2 className="text-2xl font-semibold mb-2">Welcome to Chat Assistant</h2>
+            <h2 className="text-2xl font-semibold mb-2">Hello,I'm NOOR</h2>
             <p>Start a conversation by typing a message below</p>
           </div>
         ) : (
