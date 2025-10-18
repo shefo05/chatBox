@@ -58,7 +58,7 @@ function App() {
             setMessages(prev => [...prev, aiResponse])
             setTypingMessage('')
             setIsTyping(false)
-           }, responseText.length * 50) 
+           }, responseText.length * 22) 
         }
       }, 15) 
     }, 1500)
@@ -246,7 +246,7 @@ function App() {
                         key={index} 
                         className="animate-fade-in text-gray-900 dark:text-white"
                         style={{
-                          animationDelay: `${index * 0.05}s`,
+                          animationDelay: `${index * 0.02}s`,
                           animationFillMode: 'both'
                         }}
                       >
@@ -313,7 +313,7 @@ function App() {
             onClick={() => fileInputRef.current?.click()}
             className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
           >
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
             </svg>
           </button>
@@ -323,7 +323,7 @@ function App() {
               onClick={startRecording}
               className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
             >
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
               </svg>
             </button>
@@ -332,7 +332,7 @@ function App() {
               onClick={stopRecording}
               className="p-2 text-red-500 hover:text-red-700 transition-colors"
             >
-              <div className="w-7 h-7 bg-red-500 rounded-full flex items-center justify-center">
+              <div className="w-5 h-5 md:w-7 md:h-7 bg-red-500 rounded-full flex items-center justify-center">
                 <div className="w-3 h-3 bg-white rounded-sm"></div>
               </div>
             </button>
@@ -362,7 +362,7 @@ function App() {
             disabled={!inputValue.trim() && attachments.length === 0}
             className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
           >
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
             </svg>
           </button>
