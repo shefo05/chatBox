@@ -38,8 +38,7 @@ function App() {
 
     setTimeout(() => {
       const responseText = "I received your message" + (attachments.length > 0 ? ` with ${attachments.length} attachment(s)` : '') + ". This is a simulated response."
-      
-      // Start typing animation
+
       let currentIndex = 0
       setTypingMessage('')
       
@@ -49,7 +48,6 @@ function App() {
           currentIndex++
         } else {
           clearInterval(typeInterval)
-          // Wait for the last character animation to complete before adding to messages
           setTimeout(() => {
             const aiResponse: Message = {
               id: (Date.now() + 1).toString(),
@@ -60,9 +58,9 @@ function App() {
             setMessages(prev => [...prev, aiResponse])
             setTypingMessage('')
             setIsTyping(false)
-           }, responseText.length * 50) // Dynamic timeout: 0.2s per character
+           }, responseText.length * 50) 
         }
-      }, 15) // 15ms delay between characters for much faster animation
+      }, 15) 
     }, 1500)
   }
 
@@ -138,7 +136,6 @@ function App() {
       setIsRecording(true)
       setRecordingTime(0)
       
-      // Start timer
       recordingIntervalRef.current = setInterval(() => {
         setRecordingTime(prev => prev + 1)
       }, 1000)
