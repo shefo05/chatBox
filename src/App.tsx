@@ -308,7 +308,7 @@ function App() {
           </div>
         )}
 
-        <div className="flex items-center justify-center space-x-2">
+        <div className="flex items-center justify-center md:space-x-2">
           <button
             onClick={() => fileInputRef.current?.click()}
             className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
@@ -351,7 +351,7 @@ function App() {
               onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your message..."
-              className="w-full px-4 py-3 pr-12 border border-gray-300 dark:border-gray-600 rounded-2xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+              className="w-full px-4 py-3 pr-8 md:pr-12 border border-gray-300 dark:border-gray-600 rounded-2xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
               rows={1}
               style={{ minHeight: '48px', maxHeight: '120px' }}
             />
