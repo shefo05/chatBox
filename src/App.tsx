@@ -240,11 +240,11 @@ function App() {
             <div className="px-4 py-3">
               {typingMessage ? (
                 <div className="flex items-center">
-                  <p className="whitespace-pre-wrap">
+                  <p className="whitespace-pre-wrap text-gray-900 dark:text-white">
                     {typingMessage.split('').map((char, index) => (
                       <span 
                         key={index} 
-                        className="animate-fade-in"
+                        className="animate-fade-in text-gray-900 dark:text-white"
                         style={{
                           animationDelay: `${index * 0.05}s`,
                           animationFillMode: 'both'
